@@ -22,11 +22,11 @@ class App extends Component {
         <div className="container">
             <input 
               type="text"
-              value={this.state.echoText}
               placeholder="Say Something" 
+              value={this.state.echoText}
               onChange={this.handleChange}
             />
-          <p className="echo">Echo:</p>
+          <p className="echo">Echo: {this.state.echoText}</p>
           <p>This should mirror the text you typed into the input field.</p>
         </div>
       </div>
