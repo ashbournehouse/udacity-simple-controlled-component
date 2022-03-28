@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+
 class App extends Component {
+  	// As this is a simple exercise, put the state inside the main app component
+  state = {echoText: ""}
+  
+  handleChange = (event) => {
+    this.setState({echoText:event.target.value})
+  }
+  
   render() {
     return (
       <div className="App">
