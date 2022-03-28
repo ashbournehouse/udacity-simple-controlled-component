@@ -20,7 +20,12 @@ class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <div className="container">
-          <input type="text" placeholder="Say Something" />
+            <input 
+              type="text"
+              value={this.state.echoText}
+              placeholder="Say Something" 
+              onChange={this.handleChange}
+            />
           <p className="echo">Echo:</p>
           <p>This should mirror the text you typed into the input field.</p>
         </div>
